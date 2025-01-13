@@ -1,0 +1,45 @@
+/* Center the resume section */
+.about__resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Text animation for View My Resume */
+.resume-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  animation: fadeInDown 1s ease-out; /* Animate the text */
+  opacity: 0;
+  animation-fill-mode: forwards; /* Ensure the final state is kept */
+}
+
+/* Optional: Add keyframes for the text animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Bounce animation for the Download CV button */
+.button {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
